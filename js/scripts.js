@@ -25,15 +25,15 @@ window.onload = function() {
       textArray.forEach(userText(Replacement) {
         const char1 = Replacement[0].toLowerCase();
         if (_userInput(userText).includes(char1)) {
-            elementsWVowels.push(Replacement)
+            userInput.push(Replacement);
         }
     })
-    return elementsWVowels;
+    return Replacement();
 }
   
     //document.querySelector("p").removeAttribute("hidden"); // Remove the "hidden" attribute from the paragraph
   
-    Replacement(); // Call the Replacement function to perform the replacements
+     // Call the Replacement function to perform the replacements
   
     // then we show the story by removing the class attribute
     document.querySelector("p").removeAttribute("class");
