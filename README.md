@@ -24,8 +24,7 @@ _{This application will recognize certain user inputs and change them to have a 
 
 ## Known Bugs
 
-- _Any known issues_
-- _should go here_
+- _result/replacement characters do not display to the user after being changed_
 
 ## Tests Conducted
 
@@ -46,7 +45,7 @@ Describe: Neighbor()
 Test: "For numbers that contain a 3, all digits are replaced with "Won't you be my neighbor?""
 Code: beepBoop(5);
 Expected Output: "Won't you be my neighbor?"
-
+----------------------------------------------------------------------------------------------------------------------------------
 Describe: beepBoop()
 
 Test: "It should return an array of numbers from 0 to the user's inputted number"
@@ -76,6 +75,7 @@ Describe: x()
 Test: "The number 21 should be replaced with "Boop!"
 Code: beepBoop(5);
 Expected Output: [0, 1, 2, 3, 4, 5]
+------------------------------------------------------
 
 ## License
 
