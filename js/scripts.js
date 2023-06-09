@@ -1,15 +1,14 @@
 window.onload = function() {
     let form = document.querySelector("form");
     form.onsubmit = function(event) {
-      event.preventDefault(); // Prevent form submission
   
-      const userInput = document.querySelector("#userinput").value; // Use # to select element by id and retrieve its value
-      const textArray = userInput.split(" "); // Split the user input into an array of words
+        const userInput = document.querySelector("#userinput").value;
+        const textArray = userInput.split(" ");
       const userText = ["1", "2", "3"];
-      const Beep = "Beep!"; // Store the strings directly without using innerText
+      const Beep = "Beep!"; 
       const Boop = "Boop!";
       const Neighbor = "Won't you be my neighbor?";
-      let borogerOutput = ["Beep!", "Boop!", "Won't you be my neighbor?"];
+      let borogerOutput() = ["Beep!", "Boop!", "Won't you be my neighbor?"];
   
       // Define a function instead of using let and parentheses
       function Replacement() {
@@ -23,11 +22,22 @@ window.onload = function() {
           document.querySelector("p").textContent = Neighbor;
         }
       }
+      textArray.forEach(userText(Replacement) {
+        const char1 = Replacement[0].toLowerCase();
+        if (_userInput(userText).includes(char1)) {
+            elementsWVowels.push(Replacement)
+        }
+    })
+    return elementsWVowels;
+}
   
-      document.querySelector("p").removeAttribute("hidden"); // Remove the "hidden" attribute from the paragraph
+    //document.querySelector("p").removeAttribute("hidden"); // Remove the "hidden" attribute from the paragraph
   
-      Replacement(); // Call the Replacement function to perform the replacements
+    Replacement(); // Call the Replacement function to perform the replacements
   
-      return false; // Returning false prevents the form from being submitted
+    // then we show the story by removing the class attribute
+    document.querySelector("p").removeAttribute("class");
+    // we prevent the default refresh action for the submit event
+    event.preventDefault();
     };
   };
